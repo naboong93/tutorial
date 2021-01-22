@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>TEST</title>
+</head>
+<body>
+TEST!!!!!!!!!!!
+zzz
+<h1>Thymeleaf 예제</h1>
+
+<!--<span th:text="${actorVO}"></span><br/>-->
+<!--<span th:text="${actorVO?.firstName}"></span><br/>-->
+<!--<span th:text="${actorFirstNm}"></span><br/>-->
+
+<!--/*@thymesVar id="actorVO" type="com.example.supercoding.dvdRental.VO.ActorVO"*/-->
+<span th:each="actor : ${actor}"></span><br/>
+<span th:text="${actor.getFirstName()}"></span><br/>
+<span th:text="${actor.lastName}"></span><br/>
+
+</body>
+</html>
