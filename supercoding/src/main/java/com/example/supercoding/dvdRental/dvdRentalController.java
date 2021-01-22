@@ -16,7 +16,7 @@ public class dvdRentalController {
     @Autowired
     dvdRentalService dvdRentalSvc;
 
-    @GetMapping("/actor1")
+    @GetMapping("/actor11")
     public String selectActor(Model model) throws Exception {
         List<ActorVO> actorList = dvdRentalSvc.selectActor();
         ActorVO actorVO = actorList.get(0);
